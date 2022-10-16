@@ -1,5 +1,4 @@
-// export const GET_POSTS = "GET_POSTS";
-import { FetchPostAction, DeletePostAction } from './index';
+import { FetchPostAction, DeletePostAction } from './action-creators';
 
 export enum ActionTypes {
   fetchPosts,

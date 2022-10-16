@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Post, fetchPosts, deletePost, FetchPostAction } from './redux/actions/index';//../actions
-import { StoreState } from './redux/reducers/index';
+import { Post, fetchPosts, deletePost } from './redux/actions/action-creators';//../actions
+import { StoreState } from './redux/reducers/reducer';
 
 interface AppProps {
   posts: Post[];

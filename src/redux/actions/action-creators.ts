@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { Dispatch } from 'redux';
-import { ActionTypes } from './types';
+import { ActionTypes } from './action-types';
 
 export interface Post {
   id: number;
@@ -37,3 +37,4 @@ export const deletePost = (id: number): DeletePostAction => {
     payload: id
   };
 };
+
