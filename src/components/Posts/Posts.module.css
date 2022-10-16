@@ -1,0 +1,8 @@
+.posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    border: 1px solid greenyellow;
+}
