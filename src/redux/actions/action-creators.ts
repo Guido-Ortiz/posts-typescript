@@ -1,3 +1,4 @@
+import { Action } from '@remix-run/router';
 import axios from 'axios';
 import { Dispatch } from 'redux';
 import { ActionTypes } from './action-types';
@@ -24,6 +25,11 @@ export interface AddPostAction {
   payload: Post
 }
 
+export interface FilterPostAction {
+  type: ActionTypes.filterPost;
+  payload: number
+}
+
 const url = "https://jsonplaceholder.typicode.com/posts"
 
 export const fetchPosts = () => {
@@ -43,13 +49,12 @@ export const deletePost = (id: number): DeletePostAction => {
   };
 };
 
-// export const addPost = (post: Post) => {
-//   console.log(post)
-//   return{
-//     type: ActionTypes.addPost,
-//     post
-//   }
-// }
+export const filterUser = (payload: number): FilterPostAction => {
+  return {
+    type: ActionTypes.filterPost,
+    payload
+  }
+}
 
 export const addPost = (post: Post) => {
   // console.log(post)
@@ -58,13 +63,3 @@ export const addPost = (post: Post) => {
     payload: post
   }
 }
-
-// export function addArticle(article: IArticle) {
-//   const action: ArticleAction = {
-//     type: actionTypes.ADD_ARTICLE,
-//     article
-//   };
-
-  // return simulateHttpRequest(action);
-// }
-

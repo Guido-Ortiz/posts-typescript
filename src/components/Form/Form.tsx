@@ -26,7 +26,7 @@ const Form = () => {
     const addNewArticle = (e: React.FormEvent) => {
       e.preventDefault();
       saveArticle(post);
-      navigate('/posts')
+    //   navigate('/posts')
     };
 
     const dispatch: Dispatch<any> = useDispatch();
@@ -41,24 +41,7 @@ const Form = () => {
             <Navbar />
             <div>Form</div>
             <form onSubmit={addNewArticle}>
-                {/* <input
-                    type="text"
-                    id="title"
-                    placeholder="Title"
-                    onChange={handleArticleData}
-                />
-                <input
-                    type="text"
-                    id="body"
-                    placeholder="Body"
-                    onChange={handleArticleData}
-                />
-                <input
-                    type="text"
-                    id="userId"
-                    placeholder="UserId"
-                    onChange={handleArticleData}
-                /> */}
+                
                 <input
                     type="text" name='title' value={post.title}
                     placeholder="Title"

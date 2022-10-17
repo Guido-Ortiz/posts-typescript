@@ -4,40 +4,10 @@ import { Post } from '../actions/action-creators';
 
 export interface StoreState {
   posts: Post[];
+  allPosts: Post[]
 }
 
 export const reducers = combineReducers<StoreState>({
-  posts: postsReducer
+  posts: postsReducer,
+  allPosts: postsReducer
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { postsReducer } from "./postsReducer";
-// import { combineReducers } from "redux";
-
-// const rootReducer = combineReducers({
-//   postsReducer
-// });
-
-// export default rootReducer;
