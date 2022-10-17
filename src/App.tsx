@@ -41,7 +41,10 @@
 
 
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Form from './components/Form/Form';
 import Home from './components/Home/Home';
+import Landing from './components/Landing/Landing';
 
 
 
@@ -49,7 +52,18 @@ function App() {
   
   return (
     <div>
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          
+          <Route path='/' element={<Landing />} />
+            
+          <Route path='/posts' element={<Home />} />
+
+          <Route path='posts/crear' element={<Form />} />
+
+        </Routes>
+          {/* <Home /> */}
+      </BrowserRouter>
     </div>
   );
 }

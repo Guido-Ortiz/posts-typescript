@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import s from './Sidebar.module.css';
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className={s.sidebar}>
+      <select>
+        <option>user0</option>
+      </select>
+    </div>
   )
 }
 

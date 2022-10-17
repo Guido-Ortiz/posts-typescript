@@ -9,3 +9,35 @@ export interface StoreState {
 export const reducers = combineReducers<StoreState>({
   posts: postsReducer
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { postsReducer } from "./postsReducer";
+// import { combineReducers } from "redux";
+
+// const rootReducer = combineReducers({
+//   postsReducer
+// });
+
+// export default rootReducer;

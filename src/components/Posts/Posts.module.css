@@ -6,3 +6,16 @@
     background-color: #f4f4f4;
     border: 1px solid greenyellow;
 }
+
+.postcard{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #dcd0c0;
+    /* border: 1px solid salmon; */
+    border-radius: 8px;
+    margin: 10px;
+}
