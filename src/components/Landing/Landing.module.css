@@ -1,0 +1,15 @@
+.landing{
+    margin: auto 0;
+    /* border: 1px solid black; */
+    height: 100vh;
+    /* position: relative; */
+}
+
+.landing__container{
+    /* border: 1px solid red; */
+    height: 88vh;
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 

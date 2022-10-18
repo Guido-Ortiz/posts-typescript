@@ -12,7 +12,9 @@ export const postsReducer = (state: Post[] = [], action: Action) => {
       return state.filter((post: Post) => post.id !== action.payload);
 
     case ActionTypes.addPost:
-      return state.concat([action.payload])
+      // return state.concat([action.payload])
+      return [action.payload].concat(state)
+
       
     default:
       return state;

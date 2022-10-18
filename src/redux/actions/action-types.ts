@@ -1,12 +1,12 @@
-import { FetchPostAction, DeletePostAction, AddPostAction, FilterPostAction } from './action-creators';
+import { FetchPostAction, DeletePostAction, AddPostAction, FilterPostAction, EditPostAction } from './action-creators';
 
 export enum ActionTypes {
   fetchPosts,
   deletePost,
   addPost, 
-  filterPost
+  filterPost, editPost
 }
 
-export type Action = FetchPostAction | DeletePostAction | AddPostAction | FilterPostAction;
+export type Action = FetchPostAction | DeletePostAction | AddPostAction | FilterPostAction | EditPostAction;
 
 

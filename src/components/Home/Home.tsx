@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className={s.home}>
-          <Sidebar />
+          {/* <Sidebar /> */}
           <Posts />
       </div>
     </>

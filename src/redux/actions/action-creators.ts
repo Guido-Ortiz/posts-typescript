@@ -30,6 +30,11 @@ export interface FilterPostAction {
   payload: number
 }
 
+export interface EditPostAction {
+  type: ActionTypes.editPost;
+  payload: number
+}
+
 const url = "https://jsonplaceholder.typicode.com/posts"
 
 export const fetchPosts = () => {
@@ -61,5 +66,12 @@ export const addPost = (post: Post) => {
   return{
     type: ActionTypes.addPost,
     payload: post
+  }
+}
+
+export const editPost = (id: number): EditPostAction => {
+  return {
+    type: ActionTypes.editPost,
+    payload: id
   }
 }
