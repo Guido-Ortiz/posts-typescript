@@ -4,6 +4,7 @@ import { Dispatch } from "redux";
 import { useNavigate } from 'react-router-dom';
 import { addPost, Post } from '../../redux/actions/action-creators';
 import Navbar from '../Navbar/Navbar';
+import s from './Login.module.css';
 
 const Form = () => {
     const navigate = useNavigate()
@@ -39,7 +40,7 @@ const Form = () => {
     return (
         <>
             <Navbar />
-            <div>Form</div>
+            {/* <div>Form</div>
             <form onSubmit={addNewArticle}>
                 
                 <input
@@ -61,7 +62,15 @@ const Form = () => {
                 <button disabled={post === undefined ? true : false}>
                     Add post
                 </button>
-            </form>
+            </form> */}
+            <div className={s.login}>
+                <div className={s.login__container}>
+                    <h2>Login</h2>
+                    <input type='text' placeholder='Nombre de usuario...'/>
+                    <input type='password' placeholder='Contraseña' />
+                    <button>Login</button>
+                </div>
+            </div>
 
         </>
     )

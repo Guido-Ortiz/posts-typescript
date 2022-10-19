@@ -8,9 +8,10 @@ const Landing = () => {
     <div className={s.landing}>
       <Navbar />
       <div className={s.landing__container}>
-        <h2>MyPostsApp</h2>
+        <h2 className={s.landing__title}>MyPostsApp</h2>
+        <p className={s.landing__description}>Challenge tecnico Cleverpy .</p>
         <Link to='/posts'>
-            <button>empezar</button>
+            <button>Ver Posts</button>
         </Link>
       </div>
     </div>
