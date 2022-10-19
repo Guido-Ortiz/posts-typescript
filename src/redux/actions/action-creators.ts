@@ -35,6 +35,10 @@ export interface EditPostAction {
   payload: number
 }
 
+export interface ResetPostsAction {
+  type: ActionTypes.resetPosts;
+}
+
 const url = "https://jsonplaceholder.typicode.com/posts"
 
 export const fetchPosts = () => {
@@ -73,5 +77,11 @@ export const editPost = (id: number): EditPostAction => {
   return {
     type: ActionTypes.editPost,
     payload: id
+  }
+}
+
+export const resetPosts = () => {
+  return {
+    type: ActionTypes.resetPosts
   }
 }

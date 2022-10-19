@@ -15,6 +15,8 @@ export const postsReducer = (state: Post[] = [], action: Action) => {
       // return state.concat([action.payload])
       return [action.payload].concat(state)
 
+      case ActionTypes.resetPosts:
+        return []
       
     default:
       return state;
