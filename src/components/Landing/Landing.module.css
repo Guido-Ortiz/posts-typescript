@@ -1,5 +1,4 @@
 .landing {
-  /* margin: auto 0; */
   height: 100vh;
   position: relative;
 }
@@ -20,7 +19,6 @@
 }
 
 .landing__title {
-  /* color: #0e0b16; */
   line-height: 70px;
   font-size: 60px;
   font-weight: 800;
@@ -28,7 +26,6 @@
 }
 
 .landing__description {
-  /* color: #0e0b16; */
   line-height: 40px;
   font-size: 30px;
   font-weight: 400;
@@ -68,4 +65,20 @@
   color: #fff;
   font-size: 1em;
   cursor: pointer;
+  position: relative;
+}
+
+.landing__container button:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(23, 223, 223, 0.1);
+  transition: all 1s ease;
+}
+
+.landing__container button:hover:before {
+  width: 100%;
 }

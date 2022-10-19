@@ -12,7 +12,7 @@ const Navbar = () => {
 
       <div className={s.navbar__links}>
         <Link to='/posts' style={{ textDecoration: 'none' }}>
-          <h4 className={s.navbar__text}>Home</h4>
+          <h4 className={s.navbar__text}>Posts</h4>
         </Link>
 
         <Link to='/login'>

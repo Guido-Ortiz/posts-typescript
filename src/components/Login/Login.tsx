@@ -1,45 +1,42 @@
-import React, { useCallback, useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { Dispatch } from "redux";
-import { useNavigate } from 'react-router-dom';
-import { addPost, Post } from '../../redux/actions/action-creators';
+import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import s from './Login.module.css';
+import Breadcrumb from '../Breadcrumb/Breadcrumb';
 
-const Form = () => {
-    const navigate = useNavigate()
+const Login = () => {
+    // const navigate = useNavigate()
 
-    // const [post, setPost] = React.useState<Post | {}>();
-    const [post, setPost] = useState({
-        userId: 0,
-        title: '',
-        body: '',
-        id: 0
-    });
+    // const [post, setPost] = useState({
+    //     userId: 0,
+    //     title: '',
+    //     body: '',
+    //     id: 0
+    // });
 
-    const handleArticleData = (e: React.FormEvent<HTMLInputElement>) => {
-        setPost({
-          ...post,
-          [e.currentTarget.name]: e.currentTarget.value
-        });
-      };
+    // const handleArticleData = (e: React.FormEvent<HTMLInputElement>) => {
+    //     setPost({
+    //       ...post,
+    //       [e.currentTarget.name]: e.currentTarget.value
+    //     });
+    //   };
  
-    const addNewArticle = (e: React.FormEvent) => {
-      e.preventDefault();
-      saveArticle(post);
-    //   navigate('/posts')
-    };
+    // const addNewArticle = (e: React.FormEvent) => {
+    //   e.preventDefault();
+    //   saveArticle(post);
+    // //   navigate('/posts')
+    // };
 
-    const dispatch: Dispatch<any> = useDispatch();
+    // const dispatch: Dispatch = useDispatch();
 
-    const saveArticle = useCallback(
-        (post: Post) => dispatch(addPost(post)),
-        [dispatch]
-      );
+    // const saveArticle = useCallback(
+    //     (post: Post) => dispatch(addPost(post)),
+    //     [dispatch]
+    //   );
 
     return (
         <>
             <Navbar />
+            <Breadcrumb />
             {/* <div>Form</div>
             <form onSubmit={addNewArticle}>
                 
@@ -68,7 +65,7 @@ const Form = () => {
                     <h2>Login</h2>
                     <input type='text' placeholder='Nombre de usuario...'/>
                     <input type='password' placeholder='Contraseña' />
-                    <button>Login</button>
+                    <button className={s.login__button}>Login</button>
                 </div>
             </div>
 
@@ -76,4 +73,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default Login

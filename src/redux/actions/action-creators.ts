@@ -1,4 +1,3 @@
-import { Action } from '@remix-run/router';
 import axios from 'axios';
 import { Dispatch } from 'redux';
 import { ActionTypes } from './action-types';
@@ -43,12 +42,18 @@ const url = "https://jsonplaceholder.typicode.com/posts"
 
 export const fetchPosts = () => {
   return async (dispatch:  Dispatch) => {
-    const response = await axios.get<Post[]>(url);
-    dispatch<FetchPostAction>({
-      type: ActionTypes.fetchPosts,
-      payload: response.data
-    })
-  };
+    try{
+
+      const response = await axios.get<Post[]>(url);
+      dispatch<FetchPostAction>({
+        type: ActionTypes.fetchPosts,
+        payload: response.data
+      })
+    }
+    catch(e){
+      console.log(e)
+    }
+  }
 };
 
 export const deletePost = (id: number): DeletePostAction => {

@@ -13,10 +13,20 @@
     align-items: center;
     padding: 10px;
     background-color: #fff;
-    /* border: 1px solid salmon; */
     border-radius: 8px;
     margin: 10px;
     height: auto;
-    
-    /* border: 1px solid yellow; */
+}
+
+.post__loader {
+    position: relative;
+    height: 88vh;
+    width: 100vw;
+}
+
+.post__loader div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

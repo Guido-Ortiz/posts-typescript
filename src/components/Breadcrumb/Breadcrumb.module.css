@@ -1,0 +1,15 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.breadcrumb span {
+    margin-left: 5px;
+    text-transform: capitalize;
+    color: #4717f6;
+    text-decoration: underline;
+    font-weight: 600;
+}
