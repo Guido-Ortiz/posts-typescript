@@ -33,13 +33,13 @@
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
-    background-color: #f1f3f3;
+    background-color: var(--color-fondo);
     outline: none;
 }
 
 .login__button {
-    border: 2px solid #4717f6;
-    background-color: #4717f6;
+    border: 2px solid var(--color-principal);
+    background-color: var(--color-principal);
     height: 40px;
     letter-spacing: 1px;
     font-weight: 600;

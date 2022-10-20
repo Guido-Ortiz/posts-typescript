@@ -20,10 +20,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* <Link to='crear'>
-            <h4>crear nuevo post</h4>
-        </Link> */}
-
     </div>
   )
 }

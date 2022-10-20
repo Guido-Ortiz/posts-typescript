@@ -9,7 +9,7 @@
 .breadcrumb span {
     margin-left: 5px;
     text-transform: capitalize;
-    color: #4717f6;
+    color: var(--color-principal);
     text-decoration: underline;
     font-weight: 600;
 }

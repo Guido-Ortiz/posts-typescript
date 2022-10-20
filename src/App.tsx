@@ -4,13 +4,13 @@ import Form from './components/Login/Login';
 import Home from './components/Home/Home';
 import Landing from './components/Landing/Landing';
 
-
-
 function App() {
   
   return (
     <div>
+
       <BrowserRouter>
+
         <Routes>
           
           <Route path='/' element={<Landing />} />
@@ -20,12 +20,11 @@ function App() {
           <Route path='/login' element={<Form />} />
 
         </Routes>
-          {/* <Home /> */}
+          
       </BrowserRouter>
+
     </div>
-  );
+  )
 }
-
-
 
 export default App

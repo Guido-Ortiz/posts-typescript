@@ -8,11 +8,11 @@
     border-radius: 8px;
     background-color: #fff;
     padding: 10px;
-    /* border: 1px solid red; */
+    color: var(--color-secundario);
+    /* border-bottom: 2px solid var(--color-secundario); */
 }
 
 .card__title{
-    color: #0e0b16;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 24px;
@@ -25,7 +25,6 @@
 }
 
 .card__body{
-    color: #0e0b16;
     font-weight: 200;
     letter-spacing: 1px;
     line-height: 20px;
@@ -33,7 +32,6 @@
     margin-bottom: 5px;
     overflow-wrap: break-word;
     margin-bottom: 15px;
-    /* font-style: italic;*/ 
     padding: 10px;
 } 
 
@@ -46,5 +44,10 @@
     margin-bottom: 5px;
     align-self: flex-start;
     padding: 10px;
-    /* padding-right: 20px; */
+}
+
+.card:hover{
+    border-bottom: 2px solid var(--color-principal);
+    /* scale: 1.05; */
+    cursor: pointer;
 }
