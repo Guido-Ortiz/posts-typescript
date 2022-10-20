@@ -5,7 +5,7 @@
     justify-content: space-around;
 }
 
-.post{
+/* .post{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -16,7 +16,7 @@
     border-radius: 8px;
     margin: 10px;
     height: auto;
-}
+} */
 
 .post__loader {
     position: relative;

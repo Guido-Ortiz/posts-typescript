@@ -4,9 +4,10 @@
     width: 405px;
     justify-content: center;
     align-items: center;
-    padding: 5px;
     margin: 10px;
     border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
     /* border: 1px solid red; */
 }
 
