@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-        <Breadcrumb />
+      <Breadcrumb />
       <div className={s.home}>
           <Posts />
       </div>

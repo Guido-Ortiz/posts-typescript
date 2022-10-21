@@ -1,5 +1,5 @@
 import { Post } from '../actions/action-creators';
-import { ActionTypes,  Action } from '../actions/action-types';
+import { ActionTypes, Action } from '../actions/action-types';
 
 export interface PostStoreState {
   posts: Post[];
@@ -9,7 +9,7 @@ const initialState: PostStoreState = {
   posts: [],
 }
 
-export const postsReducer = ( state = initialState, action: Action) => {
+export const postsReducer = (state = initialState, action: Action) => {
 
   switch (action.type) {
 
@@ -25,13 +25,13 @@ export const postsReducer = ( state = initialState, action: Action) => {
         posts: state.posts.filter((post: Post) => post.id !== action.payload),
       }
 
-      case ActionTypes.resetPosts:
-        return {
-          ...state,
-          posts: []
-        }
-    
-      default:
-        return state;
+    case ActionTypes.resetPosts:
+      return {
+        ...state,
+        posts: []
+      }
+
+    default:
+      return state;
   }
 }

@@ -9,7 +9,6 @@
     background-color: #fff;
     padding: 10px;
     color: var(--color-secundario);
-    /* border-bottom: 2px solid var(--color-secundario); */
 }
 
 .card__title{
@@ -31,7 +30,7 @@
     font-size: 18px;
     margin-bottom: 5px;
     overflow-wrap: break-word;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 10px;
 } 
 
@@ -48,6 +47,5 @@
 
 .card:hover{
     border-bottom: 2px solid var(--color-principal);
-    /* scale: 1.05; */
     cursor: pointer;
 }
